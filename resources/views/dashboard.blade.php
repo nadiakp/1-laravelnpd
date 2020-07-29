@@ -508,7 +508,7 @@
 	                                <div class="tbl-row">
 	                                    <div class="tbl-cell tbl-cell-photo">
 	                                        <a href="#">
-	                                            <img src="img/photo-64-1.jpg" alt="">
+	                                            <img src="{{ asset('build/img/photo-64-1.jpg') }}" alt="">
 	                                        </a>
 	                                    </div>
 	                                    <div class="tbl-cell">
@@ -545,7 +545,7 @@
 	                                <div class="tbl-row">
 	                                    <div class="tbl-cell tbl-cell-photo">
 	                                        <a href="#">
-	                                            <img src="img/photo-64-2.jpg" alt="">
+	                                            <img src="{{ asset('build/img/photo-64-2.jpg') }}" alt="">
 	                                        </a>
 	                                    </div>
 	                                    <div class="tbl-cell">
@@ -639,7 +639,7 @@
 	                                    <div class="tbl-row">
 	                                        <div class="tbl-cell tbl-cell-photo">
 	                                            <a href="#">
-	                                                <img src="img/photo-64-2.jpg" alt="">
+	                                                <img src="{{ asset('build/img/photo-64-2.jpg') }}" alt="">
 	                                            </a>
 	                                        </div>
 	                                        <div class="tbl-cell">
@@ -655,7 +655,7 @@
 	                                    <div class="tbl-row">
 	                                        <div class="tbl-cell tbl-cell-photo">
 	                                            <a href="#">
-	                                                <img src="img/photo-64-1.jpg" alt="">
+	                                                <img src="{{ asset('build/img/photo-64-1.jpg') }}" alt="">
 	                                            </a>
 	                                        </div>
 	                                        <div class="tbl-cell">
@@ -671,7 +671,7 @@
 	                                    <div class="tbl-row">
 	                                        <div class="tbl-cell tbl-cell-photo">
 	                                            <a href="#">
-	                                                <img src="img/photo-64-3.jpg" alt="">
+	                                                <img src="{{ asset('build/img/photo-64-3.jpg') }}" alt="">
 	                                            </a>
 	                                        </div>
 	                                        <div class="tbl-cell">
@@ -687,7 +687,7 @@
 	                                    <div class="tbl-row">
 	                                        <div class="tbl-cell tbl-cell-photo">
 	                                            <a href="#">
-	                                                <img src="img/photo-64-4.jpg" alt="">
+	                                                <img src="{{ asset('build/img/photo-64-4.jpg') }}" alt="">
 	                                            </a>
 	                                        </div>
 	                                        <div class="tbl-cell">
@@ -703,7 +703,7 @@
 	                                    <div class="tbl-row">
 	                                        <div class="tbl-cell tbl-cell-photo">
 	                                            <a href="#">
-	                                                <img src="img/photo-64-2.jpg" alt="">
+	                                                <img src="{{ asset('build/img/photo-64-2.jpg') }}" alt="">
 	                                            </a>
 	                                        </div>
 	                                        <div class="tbl-cell">
@@ -719,7 +719,7 @@
 	                                    <div class="tbl-row">
 	                                        <div class="tbl-cell tbl-cell-photo">
 	                                            <a href="#">
-	                                                <img src="img/photo-64-1.jpg" alt="">
+	                                                <img src="{{ asset('build/img/photo-64-1.jpg') }}" alt="">
 	                                            </a>
 	                                        </div>
 	                                        <div class="tbl-cell">
@@ -735,7 +735,7 @@
 	                                    <div class="tbl-row">
 	                                        <div class="tbl-cell tbl-cell-photo">
 	                                            <a href="#">
-	                                                <img src="img/photo-64-3.jpg" alt="">
+	                                                <img src="{{ asset('build/img/photo-64-3.jpg') }}" alt="">
 	                                            </a>
 	                                        </div>
 	                                        <div class="tbl-cell">
@@ -751,7 +751,7 @@
 	                                    <div class="tbl-row">
 	                                        <div class="tbl-cell tbl-cell-photo">
 	                                            <a href="#">
-	                                                <img src="img/photo-64-4.jpg" alt="">
+	                                                <img src="{{ asset('build/img/photo-64-4.jpg') }}" alt="">
 	                                            </a>
 	                                        </div>
 	                                        <div class="tbl-cell">
