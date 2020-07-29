@@ -1,240 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>StartUI - Premium Bootstrap 4 Admin Dashboard Template</title>
+@extends('layouts.app')
 
-	<link href="img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
-	<link href="img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
-	<link href="img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
-	<link href="img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
-	<link href="img/favicon.png" rel="icon" type="image/png">
-	<link href="img/favicon.ico" rel="shortcut icon">
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-<link rel="stylesheet" href="css/lib/lobipanel/lobipanel.min.css">
-<link rel="stylesheet" href="css/separate/vendor/lobipanel.min.css">
-<link rel="stylesheet" href="css/lib/jqueryui/jquery-ui.min.css">
-<link rel="stylesheet" href="css/separate/pages/widgets.min.css">
-    <link rel="stylesheet" href="css/lib/font-awesome/font-awesome.min.css">
-    <link rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body class="with-side-menu dark-theme">
-
-	<header class="site-header">
-	    <div class="container-fluid">
-	        <a href="#" class="site-logo-text">LOGO</a>
-	        <button class="hamburger hamburger--htla">
-	            <span>toggle menu</span>
-	        </button>
-	        <div class="site-header-content">
-	            <div class="site-header-content-in">
-	                <div class="site-header-shown">
-	                    <div class="dropdown dropdown-notification notif">
-	                        <a href="#"
-	                           class="header-alarm dropdown-toggle active"
-	                           id="dd-notification"
-	                           data-toggle="dropdown"
-	                           aria-haspopup="true"
-	                           aria-expanded="false">
-	                            <i class="font-icon-alarm"></i>
-	                        </a>
-	                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-notif" aria-labelledby="dd-notification">
-	                            <div class="dropdown-menu-notif-header">
-	                                Notifications
-	                                <span class="label label-pill label-danger">4</span>
-	                            </div>
-	                            <div class="dropdown-menu-notif-list">
-	                                <div class="dropdown-menu-notif-item">
-	                                    <div class="photo">
-	                                        <img src="img/photo-64-1.jpg" alt="">
-	                                    </div>
-	                                    <div class="dot"></div>
-	                                    <a href="#">Morgan</a> was bothering about something
-	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-	                                </div>
-	                                <div class="dropdown-menu-notif-item">
-	                                    <div class="photo">
-	                                        <img src="img/photo-64-2.jpg" alt="">
-	                                    </div>
-	                                    <div class="dot"></div>
-	                                    <a href="#">Lioneli</a> had commented on this <a href="#">Super Important Thing</a>
-	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-	                                </div>
-	                                <div class="dropdown-menu-notif-item">
-	                                    <div class="photo">
-	                                        <img src="img/photo-64-3.jpg" alt="">
-	                                    </div>
-	                                    <div class="dot"></div>
-	                                    <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
-	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-	                                </div>
-	                                <div class="dropdown-menu-notif-item">
-	                                    <div class="photo">
-	                                        <img src="img/photo-64-4.jpg" alt="">
-	                                    </div>
-	                                    <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to see <a href="#">This Movie</a>
-	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-	                                </div>
-	                            </div>
-	                            <div class="dropdown-menu-notif-more">
-	                                <a href="#">See more</a>
-	                            </div>
-	                        </div>
-	                    </div>
-	
-	                    <div class="dropdown user-menu">
-	                        <button class="dropdown-toggle" id="dd-user-menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	                            <img src="img/avatar-2-64.png" alt="">
-	                        </button>
-	                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
-	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Profile</a>
-	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Settings</a>
-	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-question-sign"></span>Help</a>
-	                            <div class="dropdown-divider"></div>
-	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-log-out"></span>Logout</a>
-	                        </div>
-	                    </div>
-	
-	                    <button type="button" class="burger-right">
-	                        <i class="font-icon-menu-addl"></i>
-	                    </button>
-	                </div><!--.site-header-shown-->
-	
-	                <div class="mobile-menu-right-overlay"></div>
-	                <div class="site-header-collapsed">
-	                    <div class="site-header-collapsed-in">
-	                        <div class="dropdown dropdown-typical">
-	                            <a class="dropdown-toggle" id="dd-header-sales" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	                                <span class="font-icon font-icon-wallet"></span>
-	                                <span class="lbl">Sales</span>
-	                            </a>
-	
-	                            <div class="dropdown-menu" aria-labelledby="dd-header-sales">
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
-	                            </div>
-	                        </div>
-	                        <div class="dropdown dropdown-typical">
-	                            <a class="dropdown-toggle" id="dd-header-marketing" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	                                <span class="font-icon font-icon-cogwheel"></span>
-	                                <span class="lbl">Marketing automation</span>
-	                            </a>
-	
-	                            <div class="dropdown-menu" aria-labelledby="dd-header-marketing">
-	                                <a class="dropdown-item" href="#">Current Search</a>
-	                                <a class="dropdown-item" href="#">Search for Issues</a>
-	                                <div class="dropdown-divider"></div>
-	                                <div class="dropdown-header">Recent issues</div>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
-	                                <div class="dropdown-more">
-	                                    <div class="dropdown-more-caption padding">more...</div>
-	                                    <div class="dropdown-more-sub">
-	                                        <div class="dropdown-more-sub-in">
-	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
-	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
-	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
-	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
-	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                                <div class="dropdown-divider"></div>
-	                                <a class="dropdown-item" href="#">Import Issues from CSV</a>
-	                                <div class="dropdown-divider"></div>
-	                                <div class="dropdown-header">Filters</div>
-	                                <a class="dropdown-item" href="#">My Open Issues</a>
-	                                <a class="dropdown-item" href="#">Reported by Me</a>
-	                                <div class="dropdown-divider"></div>
-	                                <a class="dropdown-item" href="#">Manage filters</a>
-	                                <div class="dropdown-divider"></div>
-	                                <div class="dropdown-header">Timesheet</div>
-	                                <a class="dropdown-item" href="#">Subscribtions</a>
-	                            </div>
-	                        </div>
-	                        <div class="dropdown dropdown-typical">
-	                            <a class="dropdown-toggle" id="dd-header-social" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	                                <span class="font-icon font-icon-share"></span>
-	                                <span class="lbl">Social media</span>
-	                            </a>
-	
-	                            <div class="dropdown-menu" aria-labelledby="dd-header-social">
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
-	                            </div>
-	                        </div>
-	                        <div class="dropdown dropdown-typical">
-	                            <a href="#" class="dropdown-toggle no-arr">
-	                                <span class="font-icon font-icon-page"></span>
-	                                <span class="lbl">Projects</span>
-	                            </a>
-	                        </div>
-	                        <div class="dropdown dropdown-typical">
-	                            <a class="dropdown-toggle" id="dd-header-form-builder" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	                                <span class="font-icon font-icon-pencil"></span>
-	                                <span class="lbl">Form builder</span>
-	                            </a>
-	
-	                            <div class="dropdown-menu" aria-labelledby="dd-header-form-builder">
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
-	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
-	                            </div>
-	                        </div>
-	                        <div class="dropdown">
-	                            <button class="btn btn-rounded dropdown-toggle" id="dd-header-add" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	                                Add
-	                            </button>
-	                            <div class="dropdown-menu" aria-labelledby="dd-header-add">
-	                                <a class="dropdown-item" href="#">Quant and Verbal</a>
-	                                <a class="dropdown-item" href="#">Real Gmat Test</a>
-	                                <a class="dropdown-item" href="#">Prep Official App</a>
-	                                <a class="dropdown-item" href="#">CATprer Test</a>
-	                                <a class="dropdown-item" href="#">Third Party Test</a>
-	                            </div>
-	                        </div>
-	                        <div class="site-header-search-container">
-	                            <form class="site-header-search closed">
-	                                <input type="text" placeholder="Search"/>
-	                                <button type="submit">
-	                                    <span class="font-icon-search"></span>
-	                                </button>
-	                                <div class="overlay"></div>
-	                            </form>
-	                        </div>
-	                    </div><!--.site-header-collapsed-in-->
-	                </div><!--.site-header-collapsed-->
-	            </div><!--site-header-content-in-->
-	        </div><!--.site-header-content-->
-	    </div><!--.container-fluid-->
-	</header><!--.site-header-->
-
+@section('content')
+<!-- <div class="with-side-menu-compact with-side-menu-addl"> -->
 	<div class="mobile-menu-left-overlay"></div>
-	<nav class="side-menu">
-	    <div class="side-menu-avatar">
-	        <div class="avatar-preview avatar-preview-100">
-	            <img src="img/avatar-1-256.png" alt="">
-	        </div>
-	    </div>
+	<nav class="side-menu side-menu-compact">
 	    <ul class="side-menu-list">
 	        <li class="brown">
 	            <a href="#">
@@ -248,7 +17,7 @@
 	                <span class="lbl">Marketplace</span>
 	            </a>
 	        </li>
-	        <li class="gold opened">
+	        <li class="gold">
 	            <a href="#">
 	                <i class="font-icon font-icon-speed"></i>
 	                <span class="lbl">Performance</span>
@@ -260,156 +29,149 @@
 	                <span class="lbl">Community</span>
 	            </a>
 	        </li>
-	        <li class="purple with-sub">
-	            <span>
+	        <li class="purple opened">
+	            <a href="#">
 	                <i class="font-icon font-icon-comments active"></i>
 	                <span class="lbl">Messages</span>
-	            </span>
-	            <ul>
-	                <li><a href="#"><span class="lbl">Inbox</span><span class="label label-custom label-pill label-danger">4</span></a></li>
-	                <li><a href="#"><span class="lbl">Sent mail</span></a></li>
-	                <li><a href="#"><span class="lbl">Bin</span></a></li>
-	            </ul>
+	            </a>
 	        </li>
-	        <li class="orange-red with-sub">
-	            <span>
+	        <li class="orange-red">
+	            <a href="#">
 	                <i class="font-icon font-icon-help"></i>
 	                <span class="lbl">Support</span>
-	            </span>
-	            <ul>
-	                <li><a href="#"><span class="lbl">Feedback</span></a></li>
-	                <li><a href="#"><span class="lbl">FAQ</span></a></li>
-	            </ul>
-	        </li>
-	        <li class="grey">
-	            <a href="#">
-	                <i class="font-icon font-icon-dashboard"></i>
-	                <span class="lbl">Dashboards</span>
-	            </a>
-	        </li>
-	        <li class="red">
-	            <a href="#" class="label-right">
-	                <i class="font-icon font-icon-contacts"></i>
-	                <span class="lbl">Contacts</span>
-	                <span class="label label-custom label-pill label-danger">35</span>
-	            </a>
-	        </li>
-	        <li class="aquamarine">
-	            <a href="#">
-	                <i class="font-icon font-icon-build"></i>
-	                <span class="lbl">Companies</span>
-	            </a>
-	        </li>
-	        <li class="magenta">
-	            <a href="#">
-	                <i class="font-icon font-icon-calend"></i>
-	                <span class="lbl">Calendar</span>
-	            </a>
-	        </li>
-	        <li class="blue-dirty">
-	            <a href="#">
-	                <i class="font-icon font-icon-edit"></i>
-	                <span class="lbl">Forms</span>
-	            </a>
-	        </li>
-	        <li class="coral">
-	            <a href="#">
-	                <i class="font-icon font-icon-chart"></i>
-	                <span class="lbl">Reports</span>
-	            </a>
-	        </li>
-	        <li class="pink-red">
-	            <a href="#">
-	                <i class="font-icon font-icon-zigzag"></i>
-	                <span class="lbl">Activity</span>
-	            </a>
-	        </li>
-	        <li class="gold">
-	            <a href="#">
-	                <i class="font-icon font-icon-tablet"></i>
-	                <span class="lbl">Tables</span>
-	            </a>
-	        </li>
-	        <li class="magenta">
-	            <a href="#">
-	                <i class="font-icon font-icon-widget"></i>
-	                <span class="lbl">Widges</span>
-	            </a>
-	        </li>
-	        <li class="pink">
-	            <a href="#">
-	                <i class="font-icon font-icon-map"></i>
-	                <span class="lbl">Maps</span>
-	            </a>
-	        </li>
-	        <li class="blue-darker">
-	            <a href="#">
-	                <i class="font-icon font-icon-chart-2"></i>
-	                <span class="lbl">Charts</span>
 	            </a>
 	        </li>
 	        <li class="grey">
 	            <a href="#">
-	                <i class="font-icon font-icon-doc"></i>
-	                <span class="lbl">Documentation</span>
+	                <i class="font-icon font-icon-dots"></i>
+	                <span class="lbl">More</span>
 	            </a>
 	        </li>
-	        <li class="blue-sky">
+        </ul>
+        <nav class="side-menu-addl">
+	    <header class="side-menu-addl-title">
+	        <div class="caption">Filter by Type</div>
+	        <i class="font-icon font-icon-burger"></i>
+	    </header>
+	    <ul class="side-menu-addl-list">
+	        <li class="header">
 	            <a href="#">
-	                <i class="font-icon font-icon-question"></i>
-	                <span class="lbl">Help</span>
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Video</span>
+	                    <span class="tbl-cell tbl-cell-num">16</span>
+	                </span>
 	            </a>
 	        </li>
-	        <li class="coral">
+	        <li>
 	            <a href="#">
-	                <i class="font-icon font-icon-cogwheel"></i>
-	                <span class="lbl">Settings</span>
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Action Required</span>
+	                    <span class="tbl-cell tbl-cell-num">4</span>
+	                </span>
 	            </a>
 	        </li>
-	        <li class="magenta">
+	        <li>
 	            <a href="#">
-	                <i class="font-icon font-icon-user"></i>
-	                <span class="lbl">Profile</span>
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Fund YouTuber</span>
+	                    <span class="tbl-cell tbl-cell-num">1</span>
+	                </span>
 	            </a>
 	        </li>
-	        <li class="blue-dirty">
+	        <li>
 	            <a href="#">
-	                <i class="font-icon font-icon-notebook"></i>
-	                <span class="lbl">Tasks</span>
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Hired & Funded</span>
+	                    <span class="tbl-cell tbl-cell-num">1</span>
+	                </span>
 	            </a>
 	        </li>
-	        <li class="aquamarine">
+	        <li>
 	            <a href="#">
-	                <i class="font-icon font-icon-mail"></i>
-	                <span class="lbl">Contact form</span>
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Edit Requested</span>
+	                    <span class="tbl-cell tbl-cell-num">10</span>
+	                </span>
 	            </a>
 	        </li>
-	        <li class="pink">
+	        <li class="divider"></li>
+	        <li class="header">
 	            <a href="#">
-	                <i class="font-icon font-icon-users-group"></i>
-	                <span class="lbl">Group</span>
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Proposals</span>
+	                    <span class="tbl-cell tbl-cell-num">15</span>
+	                </span>
 	            </a>
 	        </li>
-	        <li class="gold">
+	        <li>
 	            <a href="#">
-	                <i class="font-icon font-icon-picture-2"></i>
-	                <span class="lbl">Gallery</span>
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">New</span>
+	                    <span class="tbl-cell tbl-cell-num">4</span>
+	                </span>
 	            </a>
 	        </li>
-	        <li class="brown">
+	        <li>
 	            <a href="#">
-	                <i class="font-icon font-icon-event"></i>
-	                <span class="lbl">Event</span>
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Declined</span>
+	                    <span class="tbl-cell tbl-cell-num">10</span>
+	                </span>
 	            </a>
 	        </li>
-	        <li class="red">
+	        <li>
 	            <a href="#">
-	                <i class="font-icon font-icon-case-2"></i>
-	                <span class="lbl">Project</span>
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Changes Requested</span>
+	                    <span class="tbl-cell tbl-cell-num">1</span>
+	                </span>
+	            </a>
+	        </li>
+	        <li>
+	            <a href="#">
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Changes Declined</span>
+	                    <span class="tbl-cell tbl-cell-num">2</span>
+	                </span>
+	            </a>
+	        </li>
+	        <li class="divider"></li>
+	        <li class="header">
+	            <a href="#">
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Approvals</span>
+	                    <span class="tbl-cell tbl-cell-num">15</span>
+	                </span>
+	            </a>
+	        </li>
+	        <li>
+	            <a href="#">
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Waiting for Approval Long Example</span>
+	                    <span class="tbl-cell tbl-cell-num">4</span>
+	                </span>
+	            </a>
+	        </li>
+	        <li>
+	            <a href="#">
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Approved / Completed</span>
+	                    <span class="tbl-cell tbl-cell-num">10</span>
+	                </span>
+	            </a>
+	        </li>
+	        <li>
+	            <a href="#">
+	                <span class="tbl-row">
+	                    <span class="tbl-cell tbl-cell-caption">Video in Dispute</span>
+	                    <span class="tbl-cell tbl-cell-num">11</span>
+	                </span>
 	            </a>
 	        </li>
 	    </ul>
+	</nav><!--.side-menu-addl-->
 	</nav><!--.side-menu-->
+	
 
 	<div class="page-content">
 	    <div class="container-fluid">
@@ -883,17 +645,8 @@
 	        </div>
 	    </div><!--.container-fluid-->
 	</div><!--.page-content-->
-
-	<script src="js/lib/jquery/jquery.min.js"></script>
-	<script src="js/lib/tether/tether.min.js"></script>
-	<script src="js/lib/bootstrap/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-
-	<script type="text/javascript" src="js/lib/jqueryui/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/lib/lobipanel/lobipanel.min.js"></script>
-	<script type="text/javascript" src="js/lib/match-height/jquery.matchHeight.min.js"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script>
+</div>  
+    <script>
 		$(document).ready(function(){
 			$('.panel').lobiPanel({
 				sortable: true
@@ -988,7 +741,5 @@
 				}, 1000);
 			});
 		});
-	</script>
-<script src="js/app.js"></script>
-</body>
-</html>
+    </script>
+@endsection

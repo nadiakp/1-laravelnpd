@@ -1,13 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="horizontal-navigation">
 	<div class="mobile-menu-left-overlay"></div>
 	<ul class="main-nav nav nav-inline">
 		<li class="nav-item">
 			<a class="nav-link" href="#">Contact</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Prperties</a>
+			<a class="nav-link" href="#">Properties</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link active" href="#">Documents</a>
@@ -32,7 +33,7 @@
 			</div>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Prperties</a>
+			<a class="nav-link" href="#">Properties</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="#">Documents</a>
@@ -44,7 +45,6 @@
 			<a class="nav-link" href="#">Projects</a>
 		</li>
 	</ul>
-
 
 	<div class="page-content">
 	    <div class="container-fluid">
@@ -614,5 +614,6 @@
 				}, 1000);
 			});
 		});
-	</script>
+    </script>
+</div>
 @endsection

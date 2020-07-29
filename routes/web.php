@@ -22,4 +22,10 @@ Auth::routes();
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/dashboard-top-menu', function() {
     return view('dashboard-top-menu');
-});
+})->name('dashboard-top-menu');
+Route::get('/side-menu-compact-full', function() {
+    return view('side-menu-compact-full');
+})->name('side-menu-compact-full');
+Route::get('/dashboard-addl-menu', function() {
+    return view('dashboard-addl-menu');
+})->name('dashboard-addl-menu');
