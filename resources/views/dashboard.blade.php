@@ -47,14 +47,14 @@
 	                <span class="lbl">Messages</span>
 	            </span>
 	            <ul>
-	                <li><a href="#"><span class="lbl">Messenger</span></a></li>
-	                <li><a href="#"><span class="lbl">Messages</span><span class="label label-custom label-pill label-danger">8</span></a></li>
+	                <li><a href="{{ route('messenger') }}"><span class="lbl">Messenger</span></a></li>
+	                <li><a href="{{ route('messages') }}"><span class="lbl">Messages</span><span class="label label-custom label-pill label-danger">8</span></a></li>
 	                <li><a href="#"><span class="lbl">Write Message</span></a></li>
 	                <li><a href="#"><span class="lbl">Select User</span></a></li>
 	            </ul>
 	        </li>
 	        <li class="red">
-	            <a href="#">
+	            <a href="{{ route('mail') }}">
 	                <i class="font-icon glyphicon glyphicon-send"></i>
 	                <span class="lbl">Mail</span>
 	            </a>
@@ -77,7 +77,7 @@
 	            </ul>
 	        </li>
 	        <li class="blue-dirty">
-	            <a href="#">
+	            <a href="{{ route('tables') }}">
 	                <span class="glyphicon glyphicon-th"></span>
 	                <span class="lbl">Tables</span>
 	            </a>
@@ -125,7 +125,7 @@
 	            </ul>
 	        </li>
 	        <li class="pink-red">
-	            <a href="#">
+				<a href="{{ route('activity') }}">
 	                <i class="font-icon font-icon-zigzag"></i>
 	                <span class="lbl">Activity</span>
 	            </a>
@@ -136,8 +136,8 @@
 	                <span class="lbl">Profile</span>
 	            </span>
 	            <ul>
-	                <li><a href="profile.html"><span class="lbl">Version 1</span></a></li>
-	                <li><a href="profile-2.html"><span class="lbl">Version 2</span></a></li>
+	                <li><a href="{{ route('profile-1') }}"><span class="lbl">Version 1</span></a></li>
+	                <li><a href="{{ route('profile-2') }}"><span class="lbl">Version 2</span></a></li>
 	            </ul>
 	        </li>
 	        <li class="orange-red with-sub">
@@ -190,7 +190,7 @@
 	            </ul>
 	        </li>
 	        <li class="blue-dirty">
-	            <a href="list-tasks.html">
+	            <a href="{{ route('tasks') }}">
 	                <i class="font-icon font-icon-notebook"></i>
 	                <span class="lbl">Tasks</span>
 	            </a>

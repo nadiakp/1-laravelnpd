@@ -6,10 +6,10 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="sign-avatar" align="center">
-                        <br><img src="{{ asset('build/img/avatar-sign.png') }}" style="width:90px;" alt="">
+                    <div class="card-header" align="center">
+                        <img src="{{ asset('build/img/avatar-sign.png') }}" style="width:90px;" alt=""><br><br>
+                        {{ __('Login') }}
                     </div>
-                    <div class="card-header" align="center">{{ __('Login') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">

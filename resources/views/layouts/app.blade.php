@@ -3,7 +3,7 @@
 <head>
 	@include('partials.head')
 </head>
-<body class="with-side-menu control-panel control-panel-compact"> 
+<body class="with-side-menu"> 
 	@include('partials.header')
     
 	@yield('content')

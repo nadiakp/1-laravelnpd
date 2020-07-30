@@ -36,6 +36,16 @@
     <link rel="stylesheet" href="{{ asset('build/css/lib/jqueryui/jquery-ui.min.css') }}">
     <link rel="stylesheet" href="{{ asset('build/css/separate/pages/widgets.min.css') }}">
     <link rel="stylesheet" href="{{ asset('build/css/lib/font-awesome/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/css/lib/bootstrap/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/lib/bootstrap/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/chat.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/messenger.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/lib/summernote/summernote.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/editor.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/mail.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/vendor/fancybox.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/activity.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/vendor/slick.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/profile.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/tasks.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('build/css/main.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
