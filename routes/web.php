@@ -65,6 +65,6 @@ Route::get('/tasks', function() {
     return view('tasks');
 })->name('tasks');
 
-// Route::get('/activity', function() {
-//     return view('activity');
-// })->name('activity');
+Route::get('/contacts-page', function() {
+    return view('contacts-page');
+})->name('contacts-page');

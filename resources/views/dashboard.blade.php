@@ -196,7 +196,7 @@
 	            </a>
 	        </li>
 	        <li class="aquamarine">
-	            <a href="contacts-page.html">
+	            <a href="{{ route('contacts-page') }}">
 	                <i class="font-icon font-icon-mail"></i>
 	                <span class="lbl">Contact form</span>
 	            </a>

@@ -298,244 +298,171 @@
 	</nav><!--.side-menu-->
 <div class="page-content">
 		<div class="container-fluid">
-			<section class="activity-line">
-				<article class="activity-line-item box-typical">
-					<div class="activity-line-date">
-						Tuesday<br/>
-						sep 9
-					</div>
-					<header class="activity-line-item-header">
-						<div class="activity-line-item-user">
-							<div class="activity-line-item-user-photo">
-								<a href="#">
-									<img src="{{ asset('build/img/photo-64-2.jpg') }}" alt="">
-								</a>
-							</div>
-							<div class="activity-line-item-user-name">Tim Colins</div>
-							<div class="activity-line-item-user-status">Developer, Palo Alto</div>
+			<section class="box-typical contacts-page">
+				<header class="box-typical-header box-typical-header-bordered">
+					<div class="tbl-row">
+						<div class="tbl-cell tbl-cell-title">
+							<h1>Contact us</h1>
+							<ul class="contacts-tabs" role="tablist">
+								<li class="nav-item">
+									<a href="#tab-contact-1" role="tab" data-toggle="tab" class="active">France</a>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-contact-2" role="tab" data-toggle="tab">USA</a>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-contact-3" role="tab" data-toggle="tab">Singapore</a>
+								</li>
+							</ul>
 						</div>
-					</header>
-					<div class="activity-line-action-list">
-						<section class="activity-line-action">
-							<div class="time">10:40 AM</div>
-							<div class="cont">
-								<div class="cont-in">
-									<p>Uploaded 3 Images to Daily UI Album</p>
-									<ul class="previews">
-										<li>
-											<a class="fancybox" rel="gall-1" href="{{ asset('build/img/pic.jpg') }}">																	<img src="http://placehold.it/120x80" alt=""/>
-											</a>
-										</li>
-										<li>
-											<a class="fancybox" rel="gall-1" href="{{ asset('build/img/pic.jpg') }}">																	<img src="http://placehold.it/120x80" alt=""/>
-											</a>
-										</li>
-										<li>
-											<a class="fancybox" rel="gall-1" href="{{ asset('build/img/pic.jpg') }}">																	<img src="http://placehold.it/120x80" alt=""/>
-											</a>
-										</li>
-										<li>
-											<a class="fancybox" rel="gall-1" href="{{ asset('build/img/pic.jpg') }}">																	<img src="http://placehold.it/120x80" alt=""/>
-											</a>
-										</li>
-										<li>
-											<a class="fancybox" rel="gall-1" href="{{ asset('build/img/pic.jpg') }}">																	<img src="http://placehold.it/120x80" alt=""/>
-											</a>
-										</li>
-									</ul>
-									<ul class="meta">
-										<li><a href="#">5 Comments</a></li>
-										<li><a href="#">5 Likes</a></li>
-									</ul>
-								</div>
-							</div>
-						</section><!--.activity-line-action-->
-						<section class="activity-line-action">
-							<div class="time">10:40 AM</div>
-							<div class="cont">
-								<div class="cont-in">
-									<p>Left a comment to <a href="#">Olga Gozha’s</a> Image</p>
-									<div class="tbl img-comment">
-										<div class="tbl-row">
-											<div class="tbl-cell tbl-cell-img">
-												<img src="http://placehold.it/120x80" alt=""/>
-											</div>
-											<div class="tbl-cell tbl-cell-txt">
-												«Had a meeting about shopping cart experience, with Isobel Patterson, Josh Weller»
-											</div>
-										</div>
-									</div>
-									<ul class="meta">
-										<li><a href="#">5 Comments</a></li>
-										<li><a href="#">5 Likes</a></li>
-									</ul>
-								</div>
-							</div>
-						</section><!--.activity-line-action-->
-						<section class="activity-line-action">
-							<div class="time">10:40 AM</div>
-							<div class="cont">
-								<div class="cont-in">
-									<p>Uploaded 3 files</p>
-									<ul class="attach-list">
-										<li>
-											<i class="font-icon font-icon-page"></i>
-											<a href="#">example.avi</a>
-										</li>
-										<li>
-											<i class="font-icon font-icon-page"></i>
-											<a href="#">activity.psd</a>
-										</li>
-										<li>
-											<i class="font-icon font-icon-page"></i>
-											<a href="#">example.psd</a>
-										</li>
-									</ul>
-									<ul class="meta">
-										<li><a href="#">5 Comments</a></li>
-										<li><a href="#">5 Likes</a></li>
-									</ul>
-								</div>
-							</div>
-						</section><!--.activity-line-action-->
-					</div><!--.activity-line-action-list-->
-				</article><!--.activity-line-item-->
+						<div class="tbl-cell tbl-cell-actions">
+							<button type="button" class="action-btn action-btn-expand">
+								<i class="font-icon font-icon-expand"></i>
+							</button>
+						</div>
+					</div>
+				</header>
 
-				<article class="activity-line-item box-typical">
-					<div class="activity-line-date">
-						Monday<br/>
-						sep 8
-					</div>
-					<header class="activity-line-item-header">
-						<div class="activity-line-item-user">
-							<div class="activity-line-item-user-photo">
-								<a href="#">
-									<img src="{{ asset('build/img/photo-64-2.jpg') }}" alt="">
+				<div class="tab-content">
+					<div role="tabpanel" class="clearfix tab-pane active" id="tab-contact-1">
+						<div class="contacts-page-col-left">
+							<div class="contacts-page-col-left-in">
+								<div id="map_canvas" class="map"></div>
+							</div><!--.contacts-page-col-left-in-->
+						</div><!--.contacts-page-col-left-->
+						<div class="contacts-page-col-right">
+							<section class="contacts-page-section">
+								<header class="box-typical-header-sm">Connect</header>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-facebook"></i>
 								</a>
-							</div>
-							<div class="activity-line-item-user-name">Tim Colins</div>
-							<div class="activity-line-item-user-status">Developer, Palo Alto</div>
-						</div>
-					</header>
-					<div class="activity-line-action-list">
-						<section class="activity-line-action">
-							<div class="time">10:40 AM</div>
-							<div class="cont">
-								<div class="cont-in">
-									<p>Started nes UI migration</p>
-									<ul class="meta">
-										<li><a href="#">5 Comments</a></li>
-										<li><a href="#">5 Likes</a></li>
-									</ul>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-twitter"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-linkedin"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-google-plus"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-instagram"></i>
+								</a>
+							</section>
+							<form class="contacts-page-section">
+								<header class="box-typical-header-sm">Send Message</header>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="E-Mail"/>
 								</div>
-							</div>
-						</section><!--.activity-line-action-->
-						<section class="activity-line-action">
-							<div class="dot"></div>
-							<div class="time">10:40 AM</div>
-							<div class="cont">
-								<div class="cont-in">
-									<p>Had a meeting about shopping cart experience, with Isobel Patterson, Josh Weller, Mark Taylor</p>
-									<ul class="meta">
-										<li><a href="#">5 Comments</a></li>
-										<li><a href="#">5 Likes</a></li>
-									</ul>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Subject"/>
 								</div>
-							</div>
-						</section><!--.activity-line-action-->
-						<section class="activity-line-action">
-							<div class="time">10:40 AM</div>
-							<div class="cont">
-								<div class="cont-in">
-									<p>Had a meeting about shopping cart experience, with Isobel Patterson, Josh Weller, Mark Taylor</p>
-									<ul class="meta">
-										<li><a href="#">5 Comments</a></li>
-										<li><a href="#">1 Likes</a></li>
-									</ul>
+								<div class="form-group">
+									<textarea rows="4" class="form-control" placeholder="Message"></textarea>
 								</div>
-							</div>
-						</section><!--.activity-line-action-->
-					</div><!--.activity-line-action-list-->
-				</article><!--.activity-line-item-->
+								<button type="submit" class="btn btn-rounded">Send</button>
+							</form>
+							<section class="contacts-page-section">
+								<header class="box-typical-header-sm">Other way</header>
+								<p class="contact-other"><i class="font-icon font-icon-mail"></i>johndoe@gmail.com</p>
+								<p class="contact-other"><i class="font-icon font-icon-phone"></i>(+972 2) 629 06 32</p>
+							</section>
+						</div><!--.contacts-page-col-right-->
+					</div><!--.tab-pane-->
 
-				<article class="activity-line-item box-typical">
-					<div class="activity-line-date">
-						Sunday<br/>
-						sep 7
-					</div>
-					<header class="activity-line-item-header">
-						<div class="activity-line-item-user">
-							<div class="activity-line-item-user-photo">
-								<a href="#">
-									<img src="{{ asset('build/img/photo-64-3.jpg') }}" alt="">
+					<div role="tabpanel" class="clearfix tab-pane" id="tab-contact-2">
+						<div class="contacts-page-col-left">
+							<div class="contacts-page-col-left-in">
+								<div id="map_canvas_2" class="map"></div>
+							</div><!--.contacts-page-col-left-in-->
+						</div><!--.contacts-page-col-left-->
+						<div class="contacts-page-col-right">
+							<section class="contacts-page-section">
+								<header class="box-typical-header-sm">Connect</header>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-facebook"></i>
 								</a>
-							</div>
-							<div class="activity-line-item-user-name">Vasilisa</div>
-							<div class="activity-line-item-user-status">Product Manager, San Francisco</div>
-						</div>
-					</header>
-					<div class="activity-line-action-list">
-						<section class="activity-line-action">
-							<div class="time">10:40 AM</div>
-							<div class="cont">
-								<div class="cont-in">
-									<p>Scheduled a meeting for new shopping cart experience with Development team</p>
-									<ul class="meta">
-										<li><a href="#">5 Comments</a></li>
-										<li><a href="#">5 Likes</a></li>
-									</ul>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-twitter"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-linkedin"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-google-plus"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-instagram"></i>
+								</a>
+							</section>
+						</div><!--.contacts-page-col-right-->
+					</div><!--.tab-pane-->
+
+					<div role="tabpanel" class="clearfix tab-pane" id="tab-contact-3">
+						<div class="contacts-page-col-left">
+							<div class="contacts-page-col-left-in">
+								<div id="map_canvas_3" class="map"></div>
+							</div><!--.contacts-page-col-left-in-->
+						</div><!--.contacts-page-col-left-->
+						<div class="contacts-page-col-right">
+							<section class="contacts-page-section">
+								<header class="box-typical-header-sm">Connect</header>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-facebook"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-twitter"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-linkedin"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-google-plus"></i>
+								</a>
+								<a href="#" class="contact">
+									<i class="font-icon font-icon-instagram"></i>
+								</a>
+							</section>
+							<form class="contacts-page-section">
+								<header class="box-typical-header-sm">Send Message</header>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="E-Mail"/>
 								</div>
-							</div>
-						</section><!--.activity-line-action-->
-						<section class="activity-line-action">
-							<div class="time">10:40 AM</div>
-							<div class="cont">
-								<div class="cont-in">
-									<p>Had a meeting about shopping cart experience, with Isobel Patterson, Josh Weller, Mark Taylor</p>
-									<div class="alert alert-info">
-										New Notification E-Mail: Past Due Request Reminder<br/>
-										Recap: For requests, 3 e-mails are generated
-									</div>
-									<div class="alert alert-danger">
-										New Notification E-Mail: Past Due Request Reminder<br/>
-										Recap: For requests, 3 e-mails are generated
-									</div>
-									<div class="alert alert-warning">
-										New Notification E-Mail: Past Due Request Reminder<br/>
-										Recap: For requests, 3 e-mails are generated
-									</div>
-									<div class="alert alert-success">
-										New Notification E-Mail: Past Due Request Reminder<br/>
-										Recap: For requests, 3 e-mails are generated
-									</div>
-									<div class="alert alert-purple">
-										New Notification E-Mail: Past Due Request Reminder<br/>
-										Recap: For requests, 3 e-mails are generated
-									</div>
-									<ul class="meta">
-										<li><a href="#">5 Comments</a></li>
-										<li><a href="#">5 Likes</a></li>
-									</ul>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Subject"/>
 								</div>
-							</div>
-						</section><!--.activity-line-action-->
-						<div class="activity-line-more">
-							<a href="#">See more</a>
-						</div>
-					</div><!--.activity-line-action-list-->
-				</article><!--.activity-line-item-->
-			</section><!--.activity-line-->
+								<div class="form-group">
+									<textarea rows="4" class="form-control" placeholder="Message"></textarea>
+								</div>
+								<button type="submit" class="btn btn-rounded">Send</button>
+							</form>
+							<section class="contacts-page-section">
+								<header class="box-typical-header-sm">Other way</header>
+								<p class="contact-other"><i class="font-icon font-icon-mail"></i>johndoe@gmail.com</p>
+								<p class="contact-other"><i class="font-icon font-icon-phone"></i>(+972 2) 629 06 32</p>
+								<p class="contact-other"><i class="font-icon font-icon-mail"></i>johndoe@gmail.com</p>
+								<p class="contact-other"><i class="font-icon font-icon-phone"></i>(+972 2) 629 06 32</p>
+								<p class="contact-other"><i class="font-icon font-icon-mail"></i>johndoe@gmail.com</p>
+								<p class="contact-other"><i class="font-icon font-icon-phone"></i>(+972 2) 629 06 32</p>
+								<p class="contact-other"><i class="font-icon font-icon-mail"></i>johndoe@gmail.com</p>
+								<p class="contact-other"><i class="font-icon font-icon-phone"></i>(+972 2) 629 06 32</p>
+								<p class="contact-other"><i class="font-icon font-icon-mail"></i>johndoe@gmail.com</p>
+								<p class="contact-other"><i class="font-icon font-icon-phone"></i>(+972 2) 629 06 32</p>
+								<p class="contact-other"><i class="font-icon font-icon-mail"></i>johndoe@gmail.com</p>
+								<p class="contact-other"><i class="font-icon font-icon-phone"></i>(+972 2) 629 06 32</p>
+								<p class="contact-other"><i class="font-icon font-icon-mail"></i>johndoe@gmail.com</p>
+								<p class="contact-other"><i class="font-icon font-icon-phone"></i>(+972 2) 629 06 32</p>
+								<p class="contact-other"><i class="font-icon font-icon-mail"></i>johndoe@gmail.com</p>
+								<p class="contact-other"><i class="font-icon font-icon-phone"></i>(+972 2) 629 06 32</p>
+							</section>
+						</div><!--.contacts-page-col-right-->
+					</div><!--.tab-pane-->
+				</div><!--.tab-content-->
+			</section><!--.box-typical-->
 		</div><!--.container-fluid-->
 	</div><!--.page-content-->
 
-	<script src="{{ asset('build/js/lib/fancybox/jquery.fancybox.pack.js') }}"></script>
-	<script>
-		$(function() {
-			$(".fancybox").fancybox({
-				padding: 0,
-				openEffect	: 'none',
-				closeEffect	: 'none'
-			});
-		});
-	</script>
+	<script src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
+	<script src="{{ asset('build/js/lib/google-maps/infobox.js') }}"></script>
+	<script src="{{ asset('build/js/lib/google-maps/google-maps-init.js') }}"></script>
 @endsection

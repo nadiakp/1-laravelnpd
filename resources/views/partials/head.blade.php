@@ -47,5 +47,6 @@
 	<link rel="stylesheet" href="{{ asset('build/css/separate/vendor/slick.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/profile.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/tasks.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('build/css/separate/pages/contacts.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('build/css/main.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
