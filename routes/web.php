@@ -68,3 +68,5 @@ Route::get('/tasks', function() {
 Route::get('/contacts-page', function() {
     return view('contacts-page');
 })->name('contacts-page');
+
+// Route::get('chart', 'ChartController@index');

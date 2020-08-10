@@ -90,15 +90,7 @@
 	            <ul>
 	                <a href="#"><span class="lbl">Datatables.net</span></a></li>
 	                <a href="#"><span class="lbl">Bootstrap Table</span></a></li>
-	
-	                <!--<li><a href="datatables.html"><span class="lbl">Default</span></a></li>
-	                <li><a href="datatables-fixed-columns.html"><span class="lbl">Fixed Columns</span></a></li>
-	                <li><a href="datatables-reorder-rows.html"><span class="lbl">Reorder Rows</span></a></li>
-	                <li><a href="datatables-reorder-columns.html"><span class="lbl">Reorder Columns</span></a></li>
-	                <li><a href="datatables-resize-columns.html"><span class="lbl">Resize Columns</span></a></li>
-	                <li><a href="datatables-mobile.html"><span class="lbl">Mobile</span></a></li>
-	                <li><a href="datatables-filter-control.html"><span class="lbl">Filters</span></a></li>-->
-	            </ul>
+]				</ul>
 	        </li>
 	        <li class="green with-sub">
 	            <span>
@@ -324,33 +316,7 @@
 	                </div>
 	                <div class="chart-container">
 	                    <div class="chart-container-in">
-	                        <div id="chart_div"></div>
-	                        <header class="chart-container-title">Income</header>
-	                        <div class="chart-container-x">
-	                            <div class="item"></div>
-	                            <div class="item">tue</div>
-	                            <div class="item">wed</div>
-	                            <div class="item">thu</div>
-	                            <div class="item">fri</div>
-	                            <div class="item">sat</div>
-	                            <div class="item">sun</div>
-	                            <div class="item">mon</div>
-	                            <div class="item"></div>
-	                        </div>
-	                        <div class="chart-container-y">
-	                            <div class="item">300</div>
-	                            <div class="item"></div>
-	                            <div class="item">250</div>
-	                            <div class="item"></div>
-	                            <div class="item">200</div>
-	                            <div class="item"></div>
-	                            <div class="item">150</div>
-	                            <div class="item"></div>
-	                            <div class="item">100</div>
-	                            <div class="item"></div>
-	                            <div class="item">50</div>
-	                            <div class="item"></div>
-	                        </div>
+	                        <div id="chart_div" style="width:101%; height:314px;"></div>
 	                    </div>
 	                </div>
 	            </div><!--.chart-statistic-box-->
@@ -531,13 +497,6 @@
 	                                <a href="#">
 	                                    <i class="font-icon font-icon-re"></i>
 	                                </a>
-	                                <!--Реализация кнопками-->
-	                                <!--<button type="button" class="star">-->
-	                                <!--<i class="font-icon font-icon-star"></i>-->
-	                                <!--</button>-->
-	                                <!--<button type="button">-->
-	                                <!--<i class="font-icon font-icon-re"></i>-->
-	                                <!--</button>-->
 	                            </div>
 	                        </article>
 	                        <article class="comment-item">
@@ -893,98 +852,63 @@
 
 	<script>
 		$(document).ready(function() {
-			$('.panel').lobiPanel({
-				sortable: true
-			});
-			$('.panel').on('dragged.lobiPanel', function(ev, lobiPanel){
-				$('.dahsboard-column').matchHeight();
-			});
 
-			google.charts.load('current', {'packages':['corechart']});
-			google.charts.setOnLoadCallback(drawChart);
-			function drawChart() {
-				var dataTable = new google.visualization.DataTable();
-				dataTable.addColumn('string', 'Day');
-				dataTable.addColumn('number', 'Values');
-				// A column for custom tooltip content
-				dataTable.addColumn({type: 'string', role: 'tooltip', 'p': {'html': true}});
-				dataTable.addRows([
-					['MON',  130, ' '],
-					['TUE',  130, '130'],
-					['WED',  180, '180'],
-					['THU',  175, '175'],
-					['FRI',  200, '200'],
-					['SAT',  170, '170'],
-					['SUN',  250, '250'],
-					['MON',  220, '220'],
-					['TUE',  220, ' ']
-				]);
+			fetch_income_data();
 
-				var options = {
-					height: 314,
-					legend: 'none',
-					areaOpacity: 0.18,
-					axisTitlesPosition: 'out',
-					hAxis: {
-						title: '',
-						textStyle: {
-							color: '#fff',
-							fontName: 'Proxima Nova',
-							fontSize: 11,
-							bold: true,
-							italic: false
+			function fetch_income_data()
+			{
+				$.ajax({
+					url: "{{ route('chart') }}",
+					method: 'GET',
+					dataType:'json',
+					success: function (result) {
+						Highcharts.chart('chart_div', {
+						chart: {
+							type: 'line',
+							
 						},
-						textPosition: 'out'
-					},
-					vAxis: {
-						minValue: 0,
-						textPosition: 'out',
-						textStyle: {
-							color: '#fff',
-							fontName: 'Proxima Nova',
-							fontSize: 11,
-							bold: true,
-							italic: false
+						title: {
+							text: 'Week Income'
 						},
-						baselineColor: '#16b4fc',
-						ticks: [0,25,50,75,100,125,150,175,200,225,250,275,300,325,350],
-						gridlines: {
-							color: '#1ba0fc',
-							count: 15
+						xAxis: {
+							categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 						},
-					},
-					lineWidth: 2,
-					colors: ['#fff'],
-					curveType: 'function',
-					pointSize: 5,
-					pointShapeType: 'circle',
-					pointFillColor: '#f00',
-					backgroundColor: {
-						fill: '#008ffb',
-						strokeWidth: 0,
-					},
-					chartArea:{
-						left:0,
-						top:0,
-						width:'100%',
-						height:'100%'
-					},
-					fontSize: 11,
-					fontName: 'Proxima Nova',
-					tooltip: {
-						trigger: 'selection',
-						isHtml: true
+						yAxis: {
+							title: {
+								text: ''
+							}
+						},
+						series: result
+					});
 					}
-				};
-
-				var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-				chart.draw(dataTable, options);
+				});
 			}
-			$(window).resize(function(){
-				drawChart();
-				setTimeout(function(){
-				}, 1000);
-			});
 		});
+
+	// $(document).ready(function() {
+    //     $.ajax({
+    //         url: "/data.json",
+    //         success: function (result) {
+    //             Highcharts.chart('chart_div', {
+    //             chart: {
+	// 				type: 'line'
+	// 				// color: #008ffb
+	// 			},
+    //             title: {
+    //                 text: 'Week Income'
+    //             },
+    //             xAxis: {
+    //                 categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+	// 			},
+	// 			yAxis: {
+    //                 title: {
+	// 					text: ''
+	// 				}
+	// 			},
+    //             series: result
+    //         });
+    //         }
+    //     });
+	// });
 	</script>
 @endsection
